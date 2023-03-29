@@ -32,5 +32,14 @@ public class Main {
 
         ControlBonificacion controlBonificacion = new ControlBonificacion();
         controlBonificacion.registrarSalario(funcionario);
+
+
+        CuentaCorriente cc = new CuentaCorriente(1,2);
+        CuentaAhorros ca = new CuentaAhorros(2,3);
+
+        cc.depositar(2000);
+        cc.transferir(1000,ca);
+
+        System.out.println( "Mi salgo en caja de ahorros tengo: "+ cc.getSaldo());
     }
 }
