@@ -1,5 +1,5 @@
-class Cuenta {
-   private double saldo;
+public abstract class Cuenta {
+   protected double saldo;
   private int agencia = 1;
   private int numero;
    private Cliente titular = new Cliente();
@@ -12,10 +12,11 @@ class Cuenta {
 
     Cuenta.total++;
   }
-  void depositar(double plata){
+   public abstract double depositar(double plata);
+    //{
     //el saldo de este objecto, y saldo lo que recibe como parametro.
-    this.saldo = this.saldo + plata;
-  }
+    //this.saldo = this.saldo + plata;
+    // }
 
   public boolean retirar(double plata) {
     if(this.saldo >= plata){

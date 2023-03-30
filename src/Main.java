@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        Funcionario fun = new Funcionario();
+        Funcionario fun = new Contador();
         fun.setNombre("Leonel");
         fun.setDocumento("3334342342");
         fun.setSalario(2000);
@@ -24,7 +24,7 @@ public class Main {
 
         //PRACTICANDO POLIMORFISMO
 
-        Funcionario funcionario = new Funcionario();
+        Funcionario funcionario = new Contador();
         funcionario.setSalario(2000);
 
         Gerente gerente = new Gerente();

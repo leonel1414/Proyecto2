@@ -5,6 +5,11 @@ public class CuentaCorriente  extends Cuenta{
         super(agencia,numero);
     }
 
+    @Override
+    public double depositar(double plata) {
+        return 0;
+    }
+
 
     // Saca una comision por cada retiro
     //Que hago desde mi cuenta corriente.
