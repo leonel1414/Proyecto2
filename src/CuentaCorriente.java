@@ -10,7 +10,6 @@ public class CuentaCorriente  extends Cuenta{
         return 0;
     }
 
-
     // Saca una comision por cada retiro
     //Que hago desde mi cuenta corriente.
     @Override
